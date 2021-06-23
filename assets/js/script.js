@@ -219,9 +219,8 @@ const Music = {
 
 	scroll() {
 
-		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+		if (Math.ceil($(window).scrollTop()) >= $(document).height() - $(window).height()) {
 			Music.page++;
-			dd(Music.page);
 			Music.refreshContent();
 		}
 	},
