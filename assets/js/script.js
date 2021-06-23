@@ -201,7 +201,7 @@ const Music = {
 
 	scroll() {
 
-		if (Math.ceil($(window).scrollTop()) >= $(document).height() - $(window).height()) {
+		if (Math.ceil($(window).scrollTop()) >= $(document).height() - $(window).height() - 100) {
 			Music.page++;
 			Music.refreshContent();
 		}
