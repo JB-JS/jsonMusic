@@ -1,25 +1,7 @@
 // 전역 변수들 설정
 window.dd = console.log.bind(console);
 window.LS = localStorage;
-window.ch = {
-	ㄱ: '가-깋',
-	ㄲ: '까-낗',
-	ㄴ: '나-닣',
-	ㄷ: '다-딯',
-	ㄸ: '따-띻',
-	ㄹ: '라-맇',
-	ㅁ: '마-밓',
-	ㅂ: '바-빟',
-	ㅃ: '빠-삫',
-	ㅅ: '사-싷',
-	ㅆ: '싸-앃',
-	ㅇ: '아-잏',
-	ㅊ: '차-칳',
-	ㅋ: '카-킿',
-	ㅌ: '타-팋',
-	ㅍ: '파-핗',
-	ㅎ: '하-힣',
-}
+
 
 // 전역 함수들 설정
 var matchOperatorsRe = /[|\\{}()[\]^$+*?.]/g;
@@ -355,10 +337,6 @@ const Music = {
 
 
 		if (Music.searchData) {
-
-			let keyword = ch[Music.searchData] || null
-
-			dd(keyword);
 
 			const reg = new RegExp(escape(Music.searchData), 'g');
 			const mark = '<mark style="color: red;">'+Music.searchData+'</mark>'
