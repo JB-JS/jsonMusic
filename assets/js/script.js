@@ -203,6 +203,7 @@ const Music = {
 
 		if (Math.ceil($(window).scrollTop()) >= $(document).height() - $(window).height() - 100) {
 			Music.page++;
+			dd(Music.page);
 			Music.refreshContent();
 		}
 	},
